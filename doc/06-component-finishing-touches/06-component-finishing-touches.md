@@ -1,8 +1,8 @@
 # Portfolio Part 6: Finishing Touches
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) and delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) and delete this comment -->
-- **Due Date**: <!-- TODO: fill out with due date and time (e.g., 10/17 @ 3:10 PM EST) and delete this comment -->
+- **Name**: Alok Patel
+- **Dot Number**: Patel.6624
+- **Due Date**: 11/13/2026
 
 ## Assignment Overview
 
@@ -49,8 +49,6 @@ Many of these additional techniques are somewhat out of the scope of this
 course, but just knowing about them could set you up for long term success.
 
 ## Assignment Checklist
-
-<!-- TODO: browse the checklist then delete this comment -->
 
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
@@ -141,7 +139,6 @@ to see them. If you don't like this workflow, you may try following the
 rebase strategies described [here](https://stackoverflow.com/questions/35790561/working-while-waiting-for-pending-pr)
 and [here](https://stackoverflow.com/questions/18021888/continue-working-on-a-git-branch-after-making-a-pull-request).
 
-<!-- TODO: make a new branch from main then delete this comment -->
 
 ## Assignment Tasks
 
@@ -307,18 +304,21 @@ Take some time to fill them out honestly.
 > complete the portfolio project, how much better (or worse) do you think you
 > understand software development and why?
 
-<!-- TODO: discuss -->
+Way better, to be honest. In class, we're pretty much always given an interface and told to "implement this," so I never really had to think about why something belongs in the kernel vs. the secondary methods, or what the representation should even look like. For this project, I had to figure all of that out myself, from coming up with the idea to writing the tests, which honestly gave me more of a real software development vibe. It also finally helped me understand why we do the whole kernel/secondary thing in the first place. Once I had a small and solid kernel, the secondary methods were actually pretty easy for me to write.
+
 
 > Also, did the portfolio project surface any gaps in your own knowledge of
 > software development. If so, what are those gaps and how did you address them?
 
-<!-- TODO: discuss -->
+Yes. The biggest one for me was definitely planning. Figuring out what should go in the kernel vs. the secondary methods was probably the hardest part of the whole project. The kernel has to be small, but it also needs to have enough for you to build everything else on top of it, which was harder than I expected. At first, I didn't even have anyExercise, but then I realized my secondary methods had no way to loop through the log without it. I also originally had repsFor in the kernel before realizing I could just build it using removeExercise and logSet. What helped me the most was throughly planning out each method and asking myself, "Can this be written using just the kernel?" before I start coding it. I also looked back at how components like NaturalNumber and Map for reference, which helped me figure things out quicker.
+
 
 > Finally, as a part of completing the portfolio project, to what extent has
 > your perspective of software development changed, if at all? In other words,
 > is software development something you still enjoy? If not, why not?
 
-<!-- TODO: discuss -->
+A little bit, yes. I used to think software development was mostly about writing code and getting it to work, but now I realize how much planning and thinking goes into it before you even start coding. I still really enjoy it, maybe even more now because It's a nice feeling when you build something from scratch and see everything, like the interfaces, abstract classes, kernel methods, and tests, come together.
+
 
 > One of the challenges of completing the portfolio project is picking up a lot
 > of skills on your own. Some of these skills are, of course, software skills.
@@ -326,29 +326,33 @@ Take some time to fill them out honestly.
 > this process. Therefore, the first question is what skills did you pick up
 > through this process?
 
-<!-- TODO: discuss -->
+On the coding side, I learned how to design my own API, choose a representation, write conventions and correspondence, build methods using a kernel, and create JUnit tests to make sure everything works correctly. I also got better at using Git and GitHub, especially working with branches, making commits, and keeping track of changes. Outside of coding, I improved at planning ahead, breaking down larger projects into smaller tasks, and managing my time better instead of waiting until the last minute.
+
 
 > The follow-up question is: could you rephrase these skills you picked up
 > as bullet points that you could put on a resume? Try it below.
 
-<!-- TODO: discuss -->
+- Designed and built a Java workout-tracking component from scratch using a layered kernel/secondary architecture on top of a Map representation
+- Wrote 45 JUnit tests covering kernel, secondary, and common methods (equals, hashCode, toString)
+- Built two demo apps on the component, including a rep goal tracker with progress bars
+- Documented the API with formal contracts and managed development with Git, branches, and pull requests
 
 > Next, how has working on this project affected your career trajectory?
 > In other words, do you now hate the topic you picked? Or, are you even more
 > interested in it? Both outcomes are valuable to your personal development.
 
-<!-- TODO: discuss -->
+Even more into my career I’d say. I’m also really into the gym, and I find a lot of joy in working out and watching my progress build over time. Whenever I look back at where I was a year ago and see how far I’ve come, it honestly puts a smile on my face, and that’s kind of what this component is about too: logging the work so you can see it add up. Building something around a hobby I actually care about made the project way more fun than a random assignment would have been. Career-wise, I want to be an AI engineer, and this project made me a lot more confident in terms of building software on my own.
 
 > Finally, consider the skills you've picked up and your current career
 > trajectory. What are some things you could do to continue on your
 > career trajectory? Also, who are some mentors you could contact to help
 > you stay on your path?
 
-<!-- TODO: discuss -->
+I'm in my second year right now, so the big thing for me is landing an internship. To keep heading toward AI engineering, I want to keep building projects like this and putting them on my GitHub. I might even add something AI-related to this one later, like suggesting workouts based on what I've logged. I am also looking forward to eventually taking more AI/ML classes in my 3rd and 4th year and getting more research where I can apply what I've learned more effectively.
+
+For mentors, I've been really lucky to have Professor Grifski, who genuinely cares about every one of his students, including me. I also have my academic advisor, and my upperclassmen friends who were in my exact spot a year or two ago. They've already taken the classes I'm taking now, so they give me tips and tell me what to expect, and they're great people to ask about internships too.
 
 ### Changelog
-
-<!-- TODO: update CHANGELOG then delete this comment -->
 
 At the end of every assignment, you should update the
 [CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
@@ -367,8 +371,8 @@ the following form: YYYY.0M.0D.
 
 ### Added
 
-- Designed test suite for <!-- insert name of component here --> component
-- Designed two different use cases for <!-- insert name of component here --> component
+- Designed test suite for WorkoutLog component
+- Designed two different use cases for WorkoutLog component
 
 ### Updated
 
@@ -383,8 +387,6 @@ like to accomplish that, you will need to make GitHub releases after each pull
 request merge (or at least tag your commits). This is not required.
 
 ### Submission
-
-<!-- TODO: read the submission instructions then delete this comment -->
 
 Assuming that your project is in a GitHub repo somewhere and your changes are on
 a proof-of-concept branch, then what we'll want you to do is create a pull
@@ -435,7 +437,5 @@ PDF to read this rubric as a table).
 If you'd like to give feedback for this assignment (or any assignment, really),
 make use of [this survey][survey]. Your feedback helps make assignments
 better for future students.
-
-<!-- TODO: follow the link to share your feedback then delete this comment -->
 
 [survey]: https://forms.gle/dumXHo6A4Enucdkq9
